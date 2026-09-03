@@ -35,16 +35,20 @@
 
 <section class="quote-form">
 
-<form>
+<form action="https://formsubmit.co/info@thylanservicesnigeria.com.ng" method="POST">
 
-<input type="text" placeholder="Full Name" required>
+<input type="hidden" name="_subject" value="New Quote Request - THYLAN SERVICES NIGERIA">
 
-<input type="tel" placeholder="Phone Number" required>
+<input type="hidden" name="_captcha" value="false">
 
-<input type="email" placeholder="Email Address">
+<input type="text" name="Name" placeholder="Full Name" required>
 
-<select required>
-<option>Select Service</option>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+
+<input type="email" name="Email" placeholder="Email Address" required>
+
+<select name="Service" required>
+<option value="">Select Service</option>
 <option>Solar Installation</option>
 <option>CCTV Installation</option>
 <option>LAN Networking</option>
@@ -53,12 +57,11 @@
 <option>ICT Consultancy</option>
 </select>
 
-<textarea rows="6" placeholder="Describe your project"></textarea>
+<textarea name="Project" rows="6" placeholder="Describe your project" required></textarea>
 
-<button type="submit">Submit Request</button>
+<button type="submit">Request My Quote</button>
 
 </form>
-
 </section>
 
 <script src="script.js"></script>
