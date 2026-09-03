@@ -539,3 +539,23 @@ border-radius:30px;
 font-size:18px;
 cursor:pointer;
 }
+/* CONTACT PAGE */
+
+.contact-box{
+padding:60px 8%;
+text-align:center;
+}
+
+.contact-box h3{
+color:#F58220;
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin:12px 0;
+font-size:18px;
+}
+
+.map-section{
+padding:0 8% 60px;
+}
