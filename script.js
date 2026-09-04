@@ -1,33 +1,18 @@
-// THYLAN SERVICES NIGERIA 5.0
+document.querySelectorAll('.project-image img').forEach(img => {
+    img.addEventListener('click', function () {
 
-// Testimonial Slider
-const slides=document.querySelectorAll(".testimonial");
-let current=0;
+        const overlay = document.createElement('div');
+        overlay.className = 'lightbox';
 
-function showSlide(){
-slides.forEach(s=>s.classList.remove("active"));
-slides[current].classList.add("active");
-current=(current+1)%slides.length;
-}
+        overlay.innerHTML = `
+            <span class="close">&times;</span>
+            <img src="${this.src}">
+        `;
 
-if(slides.length>0){
-showSlide();
-setInterval(showSlide,4000);
-}
+        document.body.appendChild(overlay);
 
-// Animated Statistics
-const counters=document.querySelectorAll(".stats h2");
-
-counters.forEach(counter=>{
-const target=counter.innerText.replace("+","").replace("%","");
-let count=0;
-
-const update=()=>{
-count+=1;
-if(count<=target){
-counter.innerText=count+(counter.innerText.includes("%")?"%":"+");
-requestAnimationFrame(update);
-}
-}
-update();
+        overlay.onclick = function () {
+            overlay.remove();
+        };
+    });
 });
