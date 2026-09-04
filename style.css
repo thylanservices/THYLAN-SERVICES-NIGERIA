@@ -609,3 +609,84 @@ margin-bottom:15px;
 .cta-section p{
 margin-bottom:25px;
 }
+.hero{
+background:#071a35;
+color:#fff;
+padding:80px 8%;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1.2fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:52px;
+line-height:1.1;
+margin:15px 0;
+}
+
+.hero-text h1 span{
+color:#ff8c00;
+}
+
+.badge{
+background:#ff8c00;
+padding:8px 14px;
+border-radius:20px;
+font-size:13px;
+font-weight:bold;
+}
+
+.hero-buttons{
+margin:25px 0;
+display:flex;
+gap:15px;
+}
+
+.btn{
+background:#ff8c00;
+color:#fff;
+padding:14px 22px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.btn-outline{
+border:2px solid #fff;
+padding:12px 22px;
+border-radius:8px;
+color:#fff;
+text-decoration:none;
+}
+
+.hero-image img{
+width:100%;
+border-radius:18px;
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.hero-stats{
+display:flex;
+gap:30px;
+margin-top:25px;
+}
+
+.hero-stats h3{
+font-size:30px;
+color:#ff8c00;
+}
+
+@media(max-width:768px){
+.hero-content{
+grid-template-columns:1fr;
+}
+.hero-text h1{
+font-size:38px;
+}
+.hero-stats{
+justify-content:space-between;
+}
+}
