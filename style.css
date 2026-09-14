@@ -983,3 +983,42 @@ line-height:1.6;
     color:#64748b;
     line-height:1.7;
 }
+/* PROJECT RESULTS */
+
+.project-results{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.results-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.result-box{
+    background:#0f172a;
+    color:#fff;
+    padding:35px 25px;
+    border-radius:16px;
+    text-align:center;
+    transition:.35s;
+}
+
+.result-box:hover{
+    background:#0f766e;
+    transform:translateY(-6px);
+}
+
+.result-box h3{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.result-box span{
+    font-size:15px;
+    line-height:1.6;
+    color:#e2e8f0;
+}
